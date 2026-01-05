@@ -5,6 +5,8 @@ import React from "react";
 import { Zap, TrendingUp, Target, HeartPulse } from "lucide-react";
 import { SlEnergy } from "react-icons/sl";
 import { IoTrendingUp } from "react-icons/io5";
+import { BsSuitHeart } from "react-icons/bs";
+import { FiTarget } from "react-icons/fi";
 export default function WhyChoose() {
   const fakeUserData = {
     stepsToday: 12456,
@@ -94,7 +96,7 @@ export default function WhyChoose() {
             {/* Feature 3: Fun Challenges - Target/Bullseye */}
             <div className="flex flex-col items-center max-w-xs mx-auto">
               <div className="flex items-center justify-center w-20 h-20 mb-6 shadow-lg rounded-2xl bg-gradient-to-b from-purple-600 to-purple-800">
-                <Target className="w-12 h-12 text-white" strokeWidth={3} />
+                <FiTarget className="w-12 h-12 text-white" strokeWidth={3} />
               </div>
               <h3 className="mb-3 text-xl font-semibold">Fun Challenges</h3>
               <p className="text-sm text-gray-600">
@@ -106,7 +108,7 @@ export default function WhyChoose() {
             {/* Feature 4: Health-Focused Design - Heart Pulse */}
             <div className="flex flex-col items-center max-w-xs mx-auto">
               <div className="flex items-center justify-center w-20 h-20 mb-6 shadow-lg rounded-2xl bg-gradient-to-b from-red-500 to-red-700">
-                <HeartPulse className="w-12 h-12 text-white" strokeWidth={3} />
+                <BsSuitHeart className="w-12 h-12 text-white" strokeWidth={3} />
               </div>
               <h3 className="mb-3 text-xl font-semibold">
                 Health-Focused Design
@@ -119,48 +121,50 @@ export default function WhyChoose() {
           </div>
 
           {/* Highlight Section */}
-          <div className="max-w-5xl px-8 py-12 mx-auto text-white bg-gradient-to-r from-purple-600 to-indigo-700 rounded-3xl">
-            <h2 className="mb-6 text-3xl font-bold">
-              All Your Fitness Data in One Place
-            </h2>
-            <p className="max-w-2xl mx-auto mb-10 text-base">
-              Stop juggling multiple apps. Get everything you need to stay
-              healthy and active in one beautiful, easy-to-use application.
-            </p>
+          <div className="flex flex-col justify-between px-8 py-12 text-white lg:flex-row bg-gradient-to-r from-purple-600 to-indigo-700 rounded-3xl ">
+            <div className="text-start">
+              <h2 className="mb-6 text-3xl font-bold">
+                All Your Fitness Data in One Place
+              </h2>
+              <p className="max-w-md mx-auto mb-10 text-base ">
+                Stop juggling multiple apps. Get everything you need to stay
+                healthy and active in one beautiful, easy-to-use application.
+              </p>
 
-            <ul className="max-w-md mx-auto mb-12 space-y-4 text-left">
-              <li className="flex items-center">
-                <span className="mr-3 text-yellow-400">✔</span>
-                Automatic activity tracking
-              </li>
-              <li className="flex items-center">
-                <span className="mr-3 text-yellow-400">✔</span>
-                Smart goal recommendations
-              </li>
-              <li className="flex items-center">
-                <span className="mr-3 text-yellow-400">✔</span>
-                Social features & challenges
-              </li>
-              <li className="flex items-center">
-                <span className="mr-3 text-yellow-400">✔</span>
-                Beautiful insights & analytics
-              </li>
-            </ul>
+              <ul className="mx-auto mb-12 space-y-4 text-left ">
+                <li className="flex items-center">
+                  <span className="mr-3 text-yellow-400">✔</span>
+                  Automatic activity tracking
+                </li>
+                <li className="flex items-center">
+                  <span className="mr-3 text-yellow-400">✔</span>
+                  Smart goal recommendations
+                </li>
+                <li className="flex items-center">
+                  <span className="mr-3 text-yellow-400">✔</span>
+                  Social features & challenges
+                </li>
+                <li className="flex items-center">
+                  <span className="mr-3 text-yellow-400">✔</span>
+                  Beautiful insights & analytics
+                </li>
+              </ul>
+            </div>
 
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-              <div className="px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
+            <div className="grid grid-cols-2 gap-8 ">
+              <div className="flex flex-col items-center justify-center px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
                 <div className="text-4xl font-bold">99.9%</div>
                 <div className="text-sm opacity-90">Accuracy Rate</div>
               </div>
-              <div className="px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
+              <div className="flex flex-col items-center justify-center px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
                 <div className="text-4xl font-bold">24/7</div>
                 <div className="text-sm opacity-90">Tracking</div>
               </div>
-              <div className="px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
+              <div className="flex flex-col items-center justify-center px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
                 <div className="text-4xl font-bold">0%</div>
                 <div className="text-sm opacity-90">Battery Drain</div>
               </div>
-              <div className="px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
+              <div className="flex flex-col items-center justify-center px-8 py-6 bg-white/20 backdrop-blur-sm rounded-2xl">
                 <div className="text-4xl font-bold">100%</div>
                 <div className="text-sm opacity-90">Free Forever</div>
               </div>

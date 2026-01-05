@@ -5,8 +5,6 @@ import Banner from "./Banner";
 import Video from "./Challenges";
 import Pricing from "./Pricing";
 import Faq from "./Faq";
-
-import Module from "./Module";
 import Footer from "./Footer";
 import ReviewSlider from "./ReviewSlider";
 import ActivitySection from "./ActivitySection";
@@ -14,6 +12,7 @@ import Challenges from "./Challenges";
 import AchievementsRewards from "./AchievementsReward";
 import WhyChoose from "./WhyChoose";
 import HydrationDashboard from "./HydrationDashboard";
+import AppPreview from "./AppPreview";
 
 const Home = () => {
   return (
@@ -27,11 +26,12 @@ const Home = () => {
       <AchievementsRewards></AchievementsRewards>
       <HydrationDashboard></HydrationDashboard>
       <WhyChoose></WhyChoose>
+      <AppPreview></AppPreview>
       {/* <Pricing></Pricing> */}
       <ReviewSlider></ReviewSlider>
 
       <Faq></Faq>
-      <Module></Module>
+
       <Footer></Footer>
     </div>
   );
