@@ -14,6 +14,7 @@ import Challenges from "./Challenges";
 import AchievementsRewards from "./AchievementsReward";
 import WhyChoose from "./WhyChoose";
 import HydrationDashboard from "./HydrationDashboard";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -31,7 +32,8 @@ const Home = () => {
       <ReviewSlider></ReviewSlider>
 
       <Faq></Faq>
-      <Module></Module>
+      {/* <Module></Module> */}
+      <About></About>
       <Footer></Footer>
     </div>
   );
