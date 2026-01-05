@@ -42,12 +42,12 @@ const ActivitySection = () => {
       <div className="px-6 mx-auto text-center lg:px-16">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F3E8FF] text-[#7C3AED] text-sm font-medium mb-4">
-          <Activity size={16} />
+          <Footprints size={16} />
           Activity Monitoring
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl  text-[#0A0A0A]">
+        <h2 className="text-5xl  text-[#0A0A0A]">
           Track Your{" "}
           <span className="bg-gradient-to-r from-[#9810FA] to-[#155DFC] bg-clip-text text-transparent">
             Daily Activity
@@ -55,7 +55,7 @@ const ActivitySection = () => {
         </h2>
 
         {/* Description */}
-        <p className="max-w-2xl mx-auto mt-4 text-base text-gray-500">
+        <p className="max-w-2xl mx-auto mt-4 text-base text-[#4A5565]">
           Monitor every move you make with comprehensive fitness tracking that
           works automatically in the background
         </p>
@@ -80,24 +80,22 @@ const ActivitySection = () => {
         </div>
 
         {/* Progress Card */}
-        <div className="mt-14 bg-gradient-to-r from-[#F6F4FF] to-[#F9FAFF] rounded-2xl p-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+        <div className="mt-14 border border-[#F3E8FF] bg-gradient-to-r from-[#FAF5FF] to-[#EFF6FF] rounded-2xl p-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
           <div className="text-left">
-            <h4 className="text-lg font-semibold text-gray-900">
-              Today’s Progress
-            </h4>
-            <p className="mt-1 text-sm text-gray-500">
+            <h4 className="text-2xl  text-[#0A0A0A]">Today’s Progress</h4>
+            <p className="mt-1 text-base text-[#4A5565]">
               You're doing great! Keep moving to reach your daily goals.
             </p>
           </div>
 
-          <div className="flex gap-10">
-            <div className="text-right">
-              <p className="text-xl font-semibold text-gray-900">82%</p>
-              <p className="text-sm text-gray-500">Goal Reached</p>
+          <div className="flex flex-col gap-10 md:flex-col">
+            <div className="lg:text-right text-left  lg:border-r lg:border-[#D1D5DC] lg:pr-9">
+              <p className="text-2xl  text-[#0A0A0A]">82%</p>
+              <p className="text-sm text-[#4A5565]">Goal Reached</p>
             </div>
-            <div className="text-right">
-              <p className="text-xl font-semibold text-gray-900">1,755</p>
-              <p className="text-sm text-gray-500">Steps to Goal</p>
+            <div className="text-left lg:text-right">
+              <p className="text-2xl  text-[#0A0A0A]">1,755</p>
+              <p className="text-sm text-[#4A5565]">Steps to Goal</p>
             </div>
           </div>
         </div>
