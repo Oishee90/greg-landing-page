@@ -136,12 +136,14 @@ export default function Challenges() {
         </div>
 
         {/* CTA */}
-        <div className="p-12 mt-16 text-white rounded-3xl bg-gradient-to-r from-purple-600 to-indigo-600">
-          <h3 className="text-2xl font-semibold">Create Your Own Challenge</h3>
-          <p className="mt-2 text-white/80">
+        <div className="p-12 mt-16 text-[#FFFFFF] rounded-3xl bg-gradient-to-r from-[#59168BE6] to-[#1C398EE6]">
+          <h3 className="text-2xl ">Create Your Own Challenge</h3>
+
+          <p className="mt-2 text-[#E5E7EB]">
             Invite friends and compete together
           </p>
-          <button className="px-6 py-3 mt-6 text-sm font-medium text-purple-600 bg-white rounded-full hover:bg-gray-100">
+
+          <button className="px-6 py-3 mt-6 text-sm font-medium text-[#9810FA] bg-white rounded-full hover:bg-gray-100">
             Start Challenge
           </button>
         </div>
