@@ -17,7 +17,7 @@ import AppPreview from "./AppPreview";
 const Home = () => {
   return (
     <div className="h-full bg-black">
-      <div className="border-b-[#FF6A00] border-b ">
+      <div className="border-b-[#ff6a0023] border-b ">
         <Navbar></Navbar>
       </div>
       <Banner></Banner>

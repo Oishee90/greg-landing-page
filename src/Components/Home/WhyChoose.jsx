@@ -20,7 +20,7 @@ export default function WhyChoose() {
 
   return (
     <>
-      <div className="min-h-screen px-4 py-12 bg-gradient-to-b from-[#F9FAFB] to-[#FFFFFF] urbanist">
+      <div className="min-h-screen px-4 py-12 bg-gradient-to-b from-[#F9FAFB] to-[#FFFFFF] urbanist lg:px-16">
         <div className="mx-auto text-center ">
           <h2 className="text-5xl  text-[#0A0A0A]">
             Why Choose{" "}
@@ -132,7 +132,7 @@ export default function WhyChoose() {
               </ul>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 ">
+            <div className="grid w-full grid-cols-2 gap-8 lg:w-1/2 ">
               <div className="flex flex-col items-center justify-center px-8 py-6 bg-white/10 backdrop-blur-md rounded-2xl border border-[#FFFFFF]/20">
                 <div className="text-4xl">99.9%</div>
                 <div className="text-sm opacity-90">Accuracy Rate</div>

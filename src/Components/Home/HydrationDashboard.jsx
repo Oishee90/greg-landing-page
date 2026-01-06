@@ -1,15 +1,14 @@
 import { Droplet, Check } from "lucide-react";
 import glass from "../../assets/glass-water.png";
 
-
 export default function HydrationDashboard() {
   return (
-    <div className="min-h-screen px-10 py-12 bg-white urbanist">
+    <div className="min-h-screen px-4 py-12 bg-white lg:px-16 urbanist">
       {/* Header */}
       <div className="mb-12 text-center">
         {/* Heading */}
         <h2 className="text-5xl  text-[#0A0A0A]">
-          Stay
+          Stay {""}
           <span className="bg-gradient-to-r from-[#2B7FFF] to-[#00B8DB] bg-clip-text text-transparent">
             Hydrated
           </span>
@@ -50,7 +49,7 @@ export default function HydrationDashboard() {
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div
                 key={i}
-                className="flex items-center justify-center h-20 text-white bg-gradient-to-r from-[#2B7FFF] to-[#00B8DB] rounded-xl"
+                className="flex items-center justify-center h-24 text-white bg-gradient-to-r from-[#2B7FFF] to-[#00B8DB] rounded-xl "
               >
                 <Check />
               </div>
@@ -59,7 +58,7 @@ export default function HydrationDashboard() {
             {[7, 8].map((i) => (
               <div
                 key={i}
-                className="flex items-center justify-center h-20 bg-white border rounded-xl"
+                className="flex items-center justify-center bg-white border h-70 rounded-xl"
               >
                 <Droplet className="text-blue-400" />
               </div>
@@ -85,7 +84,7 @@ export default function HydrationDashboard() {
         {/* Right Image Card */}
         <div className="flex flex-col w-full lg:w-1/2 ">
           <div className="relative ">
-            <img src={glass} alt="Water" className="w-full h-full " />
+            <img src={glass} alt="Water" className="w-full h-[873px]" />
 
             <div className="absolute text-[#ffffffe3] bottom-6 left-6">
               <h3 className="mb-2  text-=">Benefits of Staying Hydrated</h3>
@@ -97,7 +96,7 @@ export default function HydrationDashboard() {
               </ul>
             </div>
           </div>
-          <div className="flex justify-end gap-6 mt-10">
+          <div className="flex w-full gap-6 mt-10">
             <StatBox
               value="42L"
               label="This Week"
@@ -124,7 +123,7 @@ export default function HydrationDashboard() {
 
 function StatBox({ value, label, bg }) {
   return (
-    <div className={`${bg} px-8 py-4 rounded-xl text-center`}>
+    <div className={`${bg} px-8 py-4 rounded-xl text-center w-full`}>
       <p className="text-xl ">{value}</p>
       <p className="text-sm text-[#4A5565]">{label}</p>
     </div>
