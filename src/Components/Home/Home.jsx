@@ -12,6 +12,7 @@ import Challenges from "./Challenges";
 import AchievementsRewards from "./AchievementsReward";
 import WhyChoose from "./WhyChoose";
 import HydrationDashboard from "./HydrationDashboard";
+import About from "./About";
 import AppPreview from "./AppPreview";
 
 const Home = () => {
@@ -31,6 +32,8 @@ const Home = () => {
       <ReviewSlider></ReviewSlider>
 
       <Faq></Faq>
+      {/* <Module></Module> */}
+      <About></About>
 
       <Footer></Footer>
     </div>
