@@ -1,44 +1,45 @@
 import { Trophy, Check, Lock, Award } from "lucide-react";
-
+import trophy from "../../assets/trophy.png";
 export default function AchievementsRewards() {
   return (
-    <section className="bg-[#FBFDFF] py-16">
+    <section className="bg-gradient-to-b from-[#F9FBFC] to-[#FFFFFF] py-16 urbanist">
       <div className="px-6 mx-auto text-center lg:px-16">
         {/* Badge */}
-        <span className="inline-flex items-center gap-2 px-4 py-1 text-sm font-medium text-yellow-700 bg-yellow-100 rounded-full">
-          🏅 Achievements
-        </span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF9C2] text-[#D08700] text-sm font-medium mb-4">
+          <Trophy size={16} />
+          Achievements
+        </div>
 
         {/* Heading */}
-        <h2 className="mt-4 text-4xl font-bold text-gray-900">
-          <span className="text-orange-500">Achievements</span> & Rewards
+        <h2 className="text-5xl bg-gradient-to-r from-[#F0B100] to-[#FF6900] bg-clip-text text-transparent ">
+          Achievements <span className="text-[#0A0A0A]">& Rewards</span>
         </h2>
-
-        <p className="mt-3 text-gray-500">
-          Unlock badges, level up, and celebrate your fitness milestones
+        {/* Description */}
+        <p className="max-w-2xl mx-auto mt-4 text-lg text-[#4A5565]">
+          Compete with friends, complete goals, and earn amazing rewards
         </p>
 
         {/* Level Card */}
-        <div className="p-6 mt-12 bg-white border shadow-sm rounded-2xl">
+        <div className="p-6 mt-12 bg-[#FFFFFF] border shadow-sm rounded-2xl">
           <div className="flex items-center justify-between">
             <div className="text-left">
-              <h4 className="font-semibold text-gray-900">
+              <h4 className="text-[#0A0A0A]  text-2xl">
                 Your Level: Active Walker
               </h4>
-              <p className="mt-1 text-sm text-gray-500">
+              <p className="mt-1 text-base text-[#4A5565]">
                 Level 3 · 12,450 / 15,000 XP
               </p>
             </div>
 
-            <div className="flex items-center justify-center w-10 h-10 bg-yellow-100 rounded-full">
-              <Trophy className="text-yellow-600" size={22} />
+            <div className="flex items-center justify-center w-10 h-10 rounded-full">
+              <img src={trophy} alt="" />
             </div>
           </div>
 
           {/* Progress Bar */}
           <div className="mt-6">
             <div className="w-full h-3 bg-gray-200 rounded-full">
-              <div className="h-3 w-[83%] rounded-full bg-gradient-to-r from-purple-500 to-indigo-500" />
+              <div className="h-3 w-[83%] rounded-full bg-gradient-to-r from-[#AD46FF] to-[#2B7FFF]" />
             </div>
 
             <div className="flex justify-between mt-2 text-xs text-gray-400">
@@ -51,21 +52,25 @@ export default function AchievementsRewards() {
         {/* Levels */}
         <div className="grid grid-cols-2 gap-4 mt-10 md:grid-cols-5">
           {/* Level 1 */}
-          <div className="p-4 border border-purple-200 rounded-xl bg-purple-50">
-            <div className="flex items-center justify-center w-10 h-10 mx-auto mb-2 bg-purple-100 rounded-full">
-              <Check className="text-purple-600" size={20} />
+          <div className="p-4 border border-[#E9D4FF] rounded-xl bg-purple-50">
+            <div className="flex items-center justify-center w-10 h-10 mx-auto mb-2 rounded-full">
+              <Check
+                className="text-[#0A0A0A]
+              "
+                size={20}
+              />
             </div>
-            <h5 className="font-medium text-gray-900">Level 1</h5>
-            <p className="text-xs text-purple-600">Beginner</p>
+            <h5 className=" text-[#0A0A0A]">Level 1</h5>
+            <p className="text-xs text-[#9810FA]">Beginner</p>
           </div>
 
           {/* Level 2 */}
           <div className="p-4 border border-purple-200 rounded-xl bg-purple-50">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-2 bg-purple-100 rounded-full">
-              <Check className="text-purple-600" size={20} />
+              <Check className="text-[#0A0A0A]" size={20} />
             </div>
-            <h5 className="font-medium text-gray-900">Level 2</h5>
-            <p className="text-xs text-purple-600">Walker</p>
+            <h5 className=" text-[#0A0A0A]">Level 2</h5>
+            <p className="text-xs text-[#9810FA]">Walker</p>
           </div>
 
           {/* Level 3 (Active) */}
@@ -73,8 +78,8 @@ export default function AchievementsRewards() {
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-2 bg-indigo-100 rounded-full">
               <Award className="text-indigo-600" size={20} />
             </div>
-            <h5 className="font-medium text-gray-900">Level 3</h5>
-            <p className="text-xs text-indigo-600">Active</p>
+            <h5 className=" text-[#0A0A0A]">Level 1</h5>
+            <p className="text-xs text-[#9810FA]">Active</p>
           </div>
 
           {/* Level 4 (Locked) */}
@@ -82,7 +87,7 @@ export default function AchievementsRewards() {
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-2 bg-gray-100 rounded-full">
               <Lock className="text-gray-400" size={18} />
             </div>
-            <h5 className="font-medium text-gray-700">Level 4</h5>
+            <h5 className="text-gray-700 f">Level 4</h5>
             <p className="text-xs text-gray-400">Athlete</p>
           </div>
 
@@ -91,7 +96,7 @@ export default function AchievementsRewards() {
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-2 bg-gray-100 rounded-full">
               <Lock className="text-gray-400" size={18} />
             </div>
-            <h5 className="font-medium text-gray-700">Level 5</h5>
+            <h5 className="text-gray-700 ">Level 5</h5>
             <p className="text-xs text-gray-400">Champion</p>
           </div>
         </div>
