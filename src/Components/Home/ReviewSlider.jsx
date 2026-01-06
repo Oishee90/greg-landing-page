@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { FiAward } from "react-icons/fi";
 import { BsTrophy, BsLightningCharge } from "react-icons/bs";
-
+import { FaRegStar } from "react-icons/fa6";
 const testimonials = [
   {
     name: "Jessica Parker",
@@ -37,28 +37,32 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="px-4 mx-auto max-w-7xl">
-        {/* Header */}
-        <div className="mb-12 text-center">
-          <span className="inline-block px-3 py-1 mb-3 text-xs font-medium text-yellow-600 bg-yellow-100 rounded-full">
-            ⭐ Testimonials
-          </span>
-          <h2 className="text-3xl font-bold text-gray-900">
-            Loved by <span className="text-blue-600">500K+ Users</span>
-          </h2>
-          <p className="mt-2 text-gray-500">
-            See what our community has to say about their fitness journey with
-            Step Quest
-          </p>
+    <section className="py-16 bg-white urbanist">
+      <div className="px-6 mx-auto text-center lg:px-16">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF9C2] text-[#D08700] text-sm font-medium mb-4">
+          <FaRegStar size={16} />
+          Achievements
         </div>
 
+        {/* Heading */}
+        <h2 className="text-5xl text-[#0A0A0A] ">
+          Loved by{" "}
+          <span className=" bg-gradient-to-r from-[#9810FA] to-[#155DFC] bg-clip-text text-transparent">
+            500K+ Users
+          </span>
+        </h2>
+        {/* Description */}
+        <p className="max-w-2xl mx-auto mt-4 text-lg text-[#4A5565]">
+          Compete with friends, complete goals, and earn amazing rewards
+        </p>
+
         {/* Cards */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-4">
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="p-6 transition bg-white border shadow-sm rounded-xl hover:shadow-md"
+              className="p-6 transition bg-gradient-to-r from-[#F9FAFB] to-[#FFFFFF] border border-[#E5E7EB] shadow-sm rounded-xl hover:shadow-md"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-3 text-yellow-400">
@@ -68,15 +72,15 @@ const Testimonials = () => {
               </div>
 
               {/* Quote */}
-              <BiSolidQuoteAltLeft className="mb-2 text-3xl text-purple-200" />
+              <BiSolidQuoteAltLeft className="mb-2 text-3xl text-[#E9D4FF] " />
 
               {/* Message */}
-              <p className="mb-5 text-sm leading-relaxed text-gray-600">
+              <p className="mb-5 text-base leading-relaxed text-left text-[#364153]">
                 “{item.message}”
               </p>
 
               {/* User */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 ">
                 <img
                   src={item.avatar}
                   alt={item.name}
@@ -86,7 +90,7 @@ const Testimonials = () => {
                   <h4 className="text-sm font-semibold text-gray-900">
                     {item.name}
                   </h4>
-                  <p className="text-xs text-gray-500">{item.role}</p>
+                  <p className="text-xs text-[#6A7282]">{item.role}</p>
                 </div>
               </div>
             </div>
@@ -94,24 +98,26 @@ const Testimonials = () => {
         </div>
 
         {/* Bottom Rating Bar */}
-        <div className="flex flex-col items-center justify-center gap-4 p-6 mt-12 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl md:flex-row">
-          <div className="pr-6 text-center border-r black border- md:text-left">
-            <h3 className="text-xl font-bold text-gray-900">4.8 / 5.0</h3>
+        <div className="flex flex-col items-center justify-center gap-4 p-6 mt-12  bg-gradient-to-r from-[#FAF5FF] to-[#EFF6FF] border border-[#F3E8FF] rounded-xl md:flex-row">
+          <div className="pr-6 text-center border-r black border-[#D1D5DC] md:text-left">
+            <h3 className="text-3xl  text-[#0A0A0A]">4.8 / 5.0</h3>
             <div className="flex justify-center gap-1 mt-1 text-yellow-400 md:justify-start">
               {[...Array(5)].map((_, i) => (
                 <FaStar key={i} size={14} />
               ))}
             </div>
-            <p className="mt-1 text-xs text-gray-500">
+            <p className="mt-1 text-base text-[#4A5565]">
               Based on 50,000+ reviews
             </p>
           </div>
-
-          <div className="flex items-center gap-6 text-xl text-gray-700">
-            <FiAward />
-            <BsTrophy />
-            <FaStar />
-            <BsLightningCharge />
+          <div className="flex flex-col justify-start gap-3 items-strat">
+            <h1 className="text-[#4A5565] text-left">Featured on:</h1>
+            <div className="flex items-center gap-6 text-xl text-gray-700">
+              <FiAward />
+              <BsTrophy />
+              <FaStar />
+              <BsLightningCharge />
+            </div>
           </div>
         </div>
       </div>

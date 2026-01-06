@@ -4,32 +4,32 @@ import { BsArrowUpRightSquare, BsArrowRight } from "react-icons/bs";
 
 const faqs = [
   {
-    question: "What is Probet?",
+    question: "Is Step Ouest completely free to use?",
     answer:
       "Probet is an innovative digital platform designed to streamline online betting experiences, offering real-time updates, secure transactions, and user-friendly interfaces.",
   },
   {
-    question: "How do I get started with Probet?",
+    question: "How accurate is the step counting?",
     answer:
       "Getting started with Probet is simple! Just visit our website, create an account, and explore our intuitive dashboard to start placing your bets or tracking analytics.",
   },
   {
-    question: "What are the key features of Probet?",
+    question: "Does the app drain my phone battery?",
     answer:
       "Probet offers real-time odds tracking, secure wallet integration, bet history analysis, intuitive UI, and responsive customer support.",
   },
   {
-    question: "How much does Probet cost?",
+    question: "Can I sync my data across multiple devices?",
     answer:
       "Probet is free to join. We may offer premium features or add-ons in the future, but basic access to the platform is completely free.",
   },
   {
-    question: "Who is Probet for?",
+    question: "What devices and platforms are supported??",
     answer:
       "Probet is perfect for sports enthusiasts, casual bettors, and professionals looking for a clean and efficient platform to enhance their betting strategies.",
   },
   {
-    question: "Is Probet safe to use?",
+    question: "Can I track activities other than walking?",
     answer:
       "Absolutely. Probet uses industry-standard encryption and follows best practices to ensure your data and transactions are secure.",
   },
@@ -43,31 +43,15 @@ const Faq = () => {
   };
   return (
     <div id="faq">
-      {/* <div className="flex flex-col items-start justify-start container mx-auto lg:w-[42%] pb-32 leading-[140%] ">
-        <img src={discover} alt="" />
-        <h1 className="dm-sans text-white text-3xl font-extrabold mt-4 text-center">
-          The real-time synchronization and AI-powered organization have made
-          our workflow more efficient than ever.
-        </h1>
-        <div className="flex items-center justify-center gap-5 mt-6 text-center w-1/2 container mx-auto">
-          <p className="text-base dm-sans text-[#EFECE6]  font-normal ">
-            Sarah Johnson
-          </p>
-          <p className="text-base dm-sans text-[#737373]  font-normal ">
-            {" "}
-            TechSavvy Solutions
-          </p>
-        </div>
-      </div> */}
-      <div className=" py-16 px-4 md:px-10 lg:px-20 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 dm-sans">
+      <div className="px-4 py-16 bg-[#F9FAFB] text-white md:px-10 lg:px-20 urbanist">
+        <div className="max-w-4xl mx-auto text-center ">
+          <h2 className="mb-4 text-4xl  md:text-5xl text-[#0A0A0A]">
             Frequently Asked{" "}
-            <span className="bg-gradient-to-l from-[#FF5C1980] to-[#FF6A00] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-l from-[#9810FA] to-[#155DFC] bg-clip-text text-transparent">
               Questions
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+          <p className="max-w-2xl mx-auto mb-12 text-[#4A5565]">
             We’ve compiled a list of the most frequently asked questions about
             SmartNotes to help you get the information you need. If you have any
             other questions, feel free to reach out to our support team.
@@ -80,22 +64,22 @@ const Faq = () => {
             return (
               <div
                 key={index}
-                className={`rounded-xl border border-[#FF6A00] transition-all duration-300 dm-sans ${
+                className={`rounded-xl border border-[#9a72b67e] transition-all duration-300  ${
                   isActive
-                    ? "bg-[#EFECE6] text-[#0B0B0B]"
-                    : "bg-transparent text-white"
+                    ? "bg-[#FFFFFF] text-[#0A0A0A]"
+                    : "bg-transparent text-[#0A0A0A]"
                 }`}
               >
                 <button
                   onClick={() => toggleIndex(index)}
-                  className="w-full text-left px-6 py-5 font-bold flex justify-between items-center text-lg dm-sans "
+                  className="flex items-center justify-between w-full px-6 py-5 text-lg font-bold text-left "
                 >
                   {faq.question}
                   <span className="ml-4">
                     {isActive ? (
-                      <BsArrowRight className="text-[#FF6A00] text-xl" />
+                      <BsArrowRight className="text-[#9810FA] text-xl" />
                     ) : (
-                      <BsArrowUpRightSquare className="text-[#FF6A00] text-xl" />
+                      <BsArrowUpRightSquare className="text-[#9810FA] text-xl" />
                     )}
                   </span>
                 </button>
