@@ -35,7 +35,7 @@ const features = [
 
 export default function AppPreview() {
   return (
-    <section className="relative py-24 bg-[#0B0B12] overflow-hidden">
+    <section    id="leadership" className="relative py-24 bg-[#0B0B12] overflow-hidden">
       {/* Gradient Glow */}
       <div className="absolute inset-0 bg-gradient-to-tr from-purple-900/20 via-transparent to-blue-900/20" />
 

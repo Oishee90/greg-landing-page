@@ -1,8 +1,10 @@
 import { Footprints, Activity, Timer } from "lucide-react";
 import { LuTarget } from "react-icons/lu";
+import { Link } from "react-router-dom";
+
 export default function Challenges() {
   return (
-    <section className="py-16 bg-white urbanist">
+    <section id="challenges" className="py-16 bg-white urbanist">
       <div className="px-6 mx-auto text-center lg:px-16 ">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F3E8FF] text-[#7C3AED] text-sm font-medium mb-4">
@@ -53,9 +55,12 @@ export default function Challenges() {
               <span className="text-sm text-[#4A5565]">
                 12,345 participants
               </span>
-              <button className="px-4 py-2 text-base text-[#FFFFFF] rounded-2xl bg-gradient-to-r from-[#AD46FF] to-[#9810FA] hover:bg-purple-700">
-                Join Now
-              </button>
+              <Link to="https://www.apple.com/app-store/">
+                {" "}
+                <button className="px-4 py-2 text-base text-[#FFFFFF] rounded-2xl bg-gradient-to-r from-[#AD46FF] to-[#9810FA] hover:bg-purple-700">
+                  Join Now
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -143,9 +148,11 @@ export default function Challenges() {
             Invite friends and compete together
           </p>
 
-          <button className="px-6 py-3 mt-6 text-sm font-medium text-[#9810FA] bg-white rounded-full hover:bg-gray-100">
-            Start Challenge
-          </button>
+          <Link to="https://www.apple.com/app-store/" target="_blank">
+            <button className="px-6 py-3 mt-6 text-sm font-medium text-[#9810FA] bg-white rounded-full hover:bg-gray-100">
+              Start Challenge
+            </button>
+          </Link>
         </div>
       </div>
     </section>

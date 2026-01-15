@@ -1,13 +1,45 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import Privacy from "./Components/Settings/Privacy";
+import Terms from "./Components/Settings/Terms";
+
 import "./index.css";
+import ScrollToTop from "./Components/ScrollToTop";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <ScrollToTop />
+        <App />
+      </>
+    ),
+  },
+  {
+    path: "/privacy",
+    element: (
+      <>
+        <ScrollToTop />
+        <Privacy />
+      </>
+    ),
+  },
+  {
+    path: "/terms",
+    element: (
+      <>
+        <ScrollToTop />
+        <Terms />
+      </>
+    ),
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

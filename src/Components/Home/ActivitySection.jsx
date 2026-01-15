@@ -38,7 +38,7 @@ const stats = [
 
 const ActivitySection = () => {
   return (
-    <section className="py-24 bg-white urbanist">
+    <section id="features" className="py-24 bg-white urbanist">
       <div className="px-6 mx-auto text-center lg:px-16">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F3E8FF] text-[#7C3AED] text-sm font-medium mb-4">
@@ -88,7 +88,7 @@ const ActivitySection = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-10 md:flex-col">
+          <div className="flex flex-col gap-10 md:flex-row">
             <div className="lg:text-right text-left  lg:border-r lg:border-[#D1D5DC] lg:pr-9">
               <p className="text-2xl  text-[#0A0A0A]">82%</p>
               <p className="text-sm text-[#4A5565]">Goal Reached</p>
