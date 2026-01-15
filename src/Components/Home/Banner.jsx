@@ -60,7 +60,7 @@ const Banner = () => {
 
               {/* Google Play */}
               <a
-                href="https://play.google.com/store"
+                href="https://play.google.com/store/games?device=windows"
                 target="_blank"
                 rel="noreferrer"
                 className="group relative rounded-xl p-[1px] bg-gradient-to-r from-[#C07AFF]/50 to-[#54A0FE]/50"
