@@ -35,7 +35,10 @@ const features = [
 
 export default function AppPreview() {
   return (
-    <section    id="leadership" className="relative py-24 bg-[#0B0B12] overflow-hidden">
+    <section
+      id="leadership"
+      className="relative py-24 bg-[#0B0B12] overflow-hidden"
+    >
       {/* Gradient Glow */}
       <div className="absolute inset-0 bg-gradient-to-tr from-purple-900/20 via-transparent to-blue-900/20" />
 
@@ -61,7 +64,7 @@ export default function AppPreview() {
 
         {/* Cards */}
         <div className="container w-full mx-auto">
-          <div className="flex items-center gap-6 mt-10">
+          <div className="flex flex-col items-center gap-6 mt-10 md:flex-row">
             {features.map((item, i) => (
               <div
                 key={i}
@@ -70,7 +73,7 @@ export default function AppPreview() {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="mb-4 shadow-xl rounded-xl h-[400px]"
+                  className="mb-4 shadow-xl rounded-xl h-[500px] w-[300px]"
                 />
                 <div className="flex flex-col justify-start px-6">
                   <h4 className="text-xl text-left">{item.title}</h4>
